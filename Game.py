@@ -1,8 +1,8 @@
 import pygame
 pygame.init()
 
-#Defining the screen width 
-screen = pygame.display.set_mode([1000,500])
+#Defining the screen width (pixels)
+screen = pygame.display.set_mode([500,500])
 
 
 #Writing a game loop
@@ -14,6 +14,9 @@ while running:
     #Feeling screen with color (RGB parameters)
     screen.fill((255, 255, 255))
 
+    #Circle added (display, color, coordinates, size)
     pygame.draw.circle(screen, (220,20,60), (250, 250), 75)
+
+    #Pusing concepts of the function
     pygame.display.flip()
 pygame.quit()
